@@ -1,0 +1,1 @@
+/share/CACHEDEV1_DATA/.qpkg/container-station/bin/docker exec -it azure-cli az login --service-principal --username $(echo $SPN | jq -r '.appId') --password $(echo $SPN | jq -r '.password') --tenant   $(echo $SPN | jq -r '.tenant')
