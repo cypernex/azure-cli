@@ -1,1 +1,1 @@
-SPN=$(az ad sp create-for-rbac -n "cli")
+export SPN=$(az ad sp create-for-rbac -n "cli")
